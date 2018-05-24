@@ -1,0 +1,22 @@
+syntax: glob
+
+cmake_build
+.externals
+*.swp
+*.log
+dev/target
+dev/so_5
+dev/timertt
+dev/spdlog
+dev/spdlog_mxxru
+dev/rapidjson
+dev/rapidjson_mxxru
+dev/libmosquitto
+dev/json_dto
+dev/fmt
+dev/fmt_mxxru
+dev/mosquitto_transport
+dev/__*.vim
+*.sublime-project
+*.sublime-workspace
+dev/local-build.rb
