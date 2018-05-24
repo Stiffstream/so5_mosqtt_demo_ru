@@ -24,7 +24,7 @@ gem install Rake
 После того как Ruby, RubyGems, Rake и MxxRu установлены можно брать примеры непосредственно из Hg-репозитория:
 
 ~~~~~{.sh}
-hg clone https://eao197@bitbucket.org/sobjectizerteam/so5_mosqtt_demo_ru
+hg clone https://bitbucket.org/sobjectizerteam/so5_mosqtt_demo_ru
 cd so5_mosqtt_demo_ru
 mxxruexternals
 cd dev
