@@ -11,41 +11,41 @@
 ## Компиляция с помощью MxxRu
 Для компиляции с помощью MxxRu потребуется Ruby, RubyGems и Rake (как правило, RubyGems устанавливается вместе с Ruby, но если это не так, то RubyGems нужно поставить явно). Для установки MxxRu нужно выполнить команду:
 
-~~~~~{.sh}
+```sh
 gem install Mxx_ru
-~~~~~
+```
 
 Для установки Rake обычно нужно выполнить команду:
-~~~~~{.sh}
+```sh
 gem install Rake
-~~~~~
+```
 но это может зависеть от используемого вами Linux-дистрибутива.
 
-После того как Ruby, RubyGems, Rake и MxxRu установлены можно брать примеры непосредственно из Hg-репозитория:
+После того как Ruby, RubyGems, Rake и MxxRu установлены можно брать примеры непосредственно из git-репозитория:
 
-~~~~~{.sh}
-hg clone https://bitbucket.org/sobjectizerteam/so5_mosqtt_demo_ru
+```sh
+git clone https://github.com/stiffstream/so5_mosqtt_demo_ru
 cd so5_mosqtt_demo_ru
 mxxruexternals
 cd dev
 ruby build.rb
-~~~~~
+```
 
-Либо же можно загрузить архив с именем вида so5_mosqtt_demo_ru-*-full.zip из секции [Downloads](https://bitbucket.org/sobjectizerteam/so5_mosqtt_demo_ru/downloads/). После чего:
+Либо же можно загрузить архив с именем вида `so5_mosqtt_demo_ru-*-full.zip` из секции [Releases](https://github.com/Stiffstream/so5_mosqtt_demo_ru/releases). После чего:
 
-~~~~~{.sh}
-unzip so5_mosqtt_demo_ru-201805241100-full.zip
+```sh
+unzip so5_mosqtt_demo_ru-201909101800-full.zip
 cd so5_mosqtt_demo_ru/dev
 ruby build.rb
-~~~~~
+```
 
 Скомпилированные примеры должны оказаться внутри подкаталога `target/release`.
 
 Также перед сборкой может быть полезно выполнить:
 
-~~~~~{.sh}
+```sh
 cp local-build.rb.example local-build.rb
-~~~~~
+```
 
 и нужным вам образом отредактировать содержимое `local-build.rb`.
 
